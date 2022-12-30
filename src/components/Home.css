@@ -2,6 +2,8 @@
   padding: 1rem;
   background-color: #f8f8f8;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -37,7 +39,10 @@
 }
 
 .image-container{
-    height: calc(100vh - 10%);
-    width: calc(100vw - 10%);
     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
