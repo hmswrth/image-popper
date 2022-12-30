@@ -37,7 +37,7 @@ function CardComponent({ id }) {
       >
         <DialogContent>
           <div className="image-container">
-            <img src={IMAGES[id - 1]} style={{height:'80vh', width:'auto'}} alt={`selected picture ${id}`}></img>
+            <img className="actual-image" src={IMAGES[id - 1]} alt={`selected picture ${id}`}></img>
           </div>
         </DialogContent>
       </Dialog>

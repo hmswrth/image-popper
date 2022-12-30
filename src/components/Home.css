@@ -46,3 +46,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.actual-image{
+    height: 80vh;
+    width: auto;
+}
+
+@media screen and (max-width : 1000px) {
+    .actual-image{
+        width: 90vw ;
+        height: auto;
+    }
+}
