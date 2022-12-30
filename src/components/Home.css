@@ -1,0 +1,43 @@
+.home-container {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.image-selection-card.MuiCard-root {
+  height: 100px;
+  width: 160px;
+  background-color: "#fff";
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.image-selection-card.MuiCard-root:hover {
+  background-color: #000;
+  scale: 0.96;
+}
+.image-selection-card.MuiCard-root > div > h2 {
+  color: #6c757d;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  transition: 0.5s all;
+}
+
+.image-selection-card.MuiCard-root:hover > div > h2 {
+  color: #fff;
+  scale: 1.5;
+}
+
+.image-selection-card:hover {
+  background-color: #fff;
+  color: aqua;
+}
+
+.image-container{
+    height: calc(100vh - 10%);
+    width: calc(100vw - 10%);
+    object-fit: cover;
+}
