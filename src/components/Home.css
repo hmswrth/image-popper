@@ -1,11 +1,38 @@
 .home-container {
-  padding: 1rem;
+  padding: 10rem;
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  min-height: calc(100vh);
+  height: fit-content;
+}
+
+.header{
+  height:fit-content;
+  width: 100vw;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 2rem;
+  z-index: 4;
+}
+
+.header > img{
+  height: 3rem;
+}
+
+.header > h6{
+  color: #000;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  transition: 0.5s all;
 }
 
 .image-selection-card.MuiCard-root {
@@ -57,4 +84,20 @@
         width: 90vw ;
         height: auto;
     }
+}
+
+@media screen and (max-width: 750px) {
+  .home-container{
+    padding: 1rem;
+    padding-top: 7rem;
+  }
+
+  .header > img {
+    height: auto;
+    width: 8rem;
+  }
+
+  .header > h6{
+    font-size: 1rem;
+  }
 }
